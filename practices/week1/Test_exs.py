@@ -65,3 +65,31 @@ for i in range(0, 3):
     for j in range(0, 4):
         print("%3d" % list2[i][j], end = " ")
     print(" ")
+
+
+ss = 'python을 열심히 공부 중'
+listSplit = ss.split()
+print(listSplit)
+
+ss = '하나:둘:셋'
+listSplit = ss.split(':')
+print(listSplit)
+
+ss = '하나\n둘\n셋'
+listSplit = ss.splitlines()
+print(listSplit)
+
+ss = '%'
+listSplit = ss.join('파이썬')
+print(listSplit)
+
+before = ['2022', '12', '31']
+after = list(map(int, before))
+print(after)
+print(type(after[0])) # int형으로 변환
+
+tt1 = (10, 20, 30); tt1
+tt2 = 10, 20, 30; tt2 # 소괄호 생략 가능
+
+print(tt1)
+print(tt2)
